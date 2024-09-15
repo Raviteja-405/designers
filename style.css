@@ -1,0 +1,230 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.large_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,14%);
+    gap: 40px;
+    justify-content: stretch;
+    position: relative;
+    
+}
+@media screen  and (max-width:968px){
+   .large_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    left: 0px;
+
+   }
+   .side_bar{
+    display: none;
+   }
+   .container_main{
+    grid-column: 1/7;
+}
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
+       
+       }
+       .container1{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1,1FR);
+        padding: 10px;
+    }
+    .pricing-table{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1,1FR);
+        padding: 10px;
+    }
+    .container_main{
+        grid-column: 1/7;
+    }
+    
+}
+@media screen and (min-width:600px) and (max-width:1800px) {
+    .container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+       
+       }
+       .container1{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3,1FR);
+        padding: 10px;
+    }
+    .pricing-table{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2,1FR);
+        padding: 10px;
+    }
+    .container_main{
+        grid-column: 2/7;
+    }
+    
+}
+#checked{
+    display: none;
+}
+#checked:checked +.humberg_bar{
+    display: block;
+    transition: all 2s ease-in-out;
+}
+.humberg_bar{
+    position: absolute;
+    top:100px;
+    left: 0px;
+    background-color: brown;
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+.humberg_bar>section{
+    text-align: center;
+    margin: 10px;
+    font-size:15x;
+    color: white;
+}
+.humberg{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+}
+@media screen and (max-width:970px){
+    .humberg{
+        display: block;
+        width: 100%;
+    height: 100px;
+    background-color: red;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+}
+.humberg>div{
+    padding: 10px;
+}
+.humberg_img>img{
+    width: fit-content;
+    height:90px;
+}
+label>img{
+    width:40px;
+    padding: 10px;
+}
+
+
+header{
+    width: 100%;
+    height: 50px;
+}
+h1{
+ font-size: 25px;
+    font-weight: 20px;
+}
+.company_name{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+.selection_bar>section{
+    text-align: center;
+    margin: 40px;
+    font-size:15x;
+    color: white;
+    text-wrap: wrap;
+    
+}
+.selection_bar>section>a:hover{
+    background-color:white;
+    color:black;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.side_bar{
+    max-width: 15%;
+    min-width: 13%;
+    height:100%;
+    background-color:red;
+    grid-column: 1/2;
+    color: white;
+    position: fixed;
+    left: 0%;
+}
+
+
+.item>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.img1{
+    background-color: lightgray;
+    /* width: 100px; */
+    
+}
+.img2{
+    background-color: lightgray;
+    /* width: 100px; */
+}
+
+.img3{
+    background-color: lightgray;
+    /* width: 100px; */
+    
+}
+ul,ul>li{
+    background-color: wheat;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+    padding: 10px; 
+}
+.basic{
+    background-color: red;
+    margin: 10px 10px 0 10px;
+    list-style: none;
+    text-align: center;
+    padding: 10px; 
+
+}
+form>input,form>textarea,form>button{
+    margin: 10px;
+    padding: 10px;
+}
+
